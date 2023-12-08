@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .main_container {
+            width: 100vw;
+            height: 100vh;
+            background-color: darkgray;
+            color: blue;
+        }
+
+        h1 {
+            font-size: 4rem;
+            padding: 50px 0;
+            text-align: center;
+            color: brown;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .Container {
+            width: 80vw;
+            height: auto;
+            margin: auto;
+            flex-wrap: wrap;
+            display: flex;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .sub_container {
+
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            box-shadow: 0 0 20px cadetblue;
+        }
+
+        .sub_container:first-child {
+            background-color: burlywood;
+        }
+
+        .sub_container:last-child {
+            background-color: cornsilk;
+        }
+
+        @media (max-width:768px) {
+            .main_container {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <h1>Components</h1>
+        <div class="Container">
+            <div class="sub_container">
+                <p>Sub Container</p>
+            </div>
+            <div class="sub_container">
+                <p>Sub Container</p>
+            </div>
+            <div class="sub_container">
+                <p>Sub Container</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
